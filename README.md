@@ -19,3 +19,9 @@ if (!data.Success || data.Data.UserList.Count <= 0)
 }
 return data.Data;
 ```
+
+## 使用约定
+根据接口名称查找路径，例如接口为 youzan.trade.get.4.0.0，
+那么调用路径为 client.Trade.GetAsync
+
+后面的4.0.0为版本号，如果要调用指定版本的，则方法名约定为 GetV4_0_0Async
